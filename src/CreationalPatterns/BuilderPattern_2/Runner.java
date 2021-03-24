@@ -12,12 +12,28 @@ public class Runner {
         final Steering steering = new Steering();
         final SmartControl smartControl = new SmartControl();
 
-        CarWithBuilder car = CarWithBuilder.builder()
+        /*
+        Creating Objects using Builders
+        -> Simple Construction code
+        -> Readable
+        -> Immutable Object
+         */
+        CarWithBuilder car1 = CarWithBuilder.builder()
                 .setAirBags(airBags)
                 .setEngine(engine)
                 .setSteering(steering)
                 .setFuel(Fuel.PETROl)
+                .setRoof(roof)
+                .setSmartControl(smartControl)
                 .build();
-        System.out.println(car);
+        System.out.println(car1);
+
+        CarWithBuilder car2 = CarWithBuilder.builder()
+                .setAirBags(airBags)
+                .setEngine(engine)
+                .setFuel(Fuel.DIESEL)
+                .setSmartControl(smartControl)
+                .build();
+        System.out.println(car2);
     }
 }
