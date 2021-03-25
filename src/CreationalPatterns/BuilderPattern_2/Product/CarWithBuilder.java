@@ -72,4 +72,15 @@ public class CarWithBuilder {
         }
     }
 
+    @Override
+    public String toString() {
+        return "CarWithBuilder{" +
+                "engine=" + engine +
+                ", steering=" + steering +
+                ", fuel=" + fuel +
+                ", roof=" + roof +
+                ", airBags=" + airBags +
+                ", smartControl=" + smartControl +
+                '}';
+    }
 }

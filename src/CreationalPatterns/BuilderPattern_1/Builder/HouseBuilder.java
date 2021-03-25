@@ -4,13 +4,13 @@ import CreationalPatterns.BuilderPattern_1.Product.House;
 
 public interface HouseBuilder {
 
-    public void buildBasement();
+    void buildBasement();
 
-    public void buildInterior();
+    void buildInterior();
 
-    public void buildStructure();
+    void buildStructure();
 
-    public void buildRoof();
+    void buildRoof();
 
-    public House getHouse();
+    House getHouse();
 }

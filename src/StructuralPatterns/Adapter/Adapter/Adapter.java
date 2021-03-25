@@ -5,7 +5,7 @@ import StructuralPatterns.Adapter.Helicopter.Helicopter;
 
 public class Adapter implements Aircraft {
 
-    Helicopter helicopter;
+    private Helicopter helicopter;
 
     public Adapter(Helicopter helicopter){
         this.helicopter=helicopter;

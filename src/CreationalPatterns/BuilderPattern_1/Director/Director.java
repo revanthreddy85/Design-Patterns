@@ -4,7 +4,7 @@ import CreationalPatterns.BuilderPattern_1.Builder.HouseBuilder;
 import CreationalPatterns.BuilderPattern_1.Product.House;
 
 public class Director {
-    private HouseBuilder builder = null;
+    private HouseBuilder builder;
 
     public Director(HouseBuilder builder) {
         this.builder = builder;

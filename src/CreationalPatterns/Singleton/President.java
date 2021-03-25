@@ -1,6 +1,6 @@
 package CreationalPatterns.Singleton;
 
-public class President {
+class President {
     // The sole instance of the class
     private static President obj = null;
 
@@ -11,7 +11,7 @@ public class President {
     }
 
     // Create a static method for object creation
-    public static President getInstance() {
+    static President getInstance() {
         // lazy or delayed creation of the object
         if(obj == null)
             obj = new President();
